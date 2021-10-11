@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TVnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIM : A11.2020.12893"
+        app:layout_constraintTop_toBottomOf="@id/IVFoto"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/TVNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama : Hanif Nouval Setyananda"
+        app:layout_constraintTop_toBottomOf="@id/TVnim"
+        />
+
+    <ImageView
+        android:id="@+id/IVFoto"
+        android:layout_width="289dp"
+        android:layout_height="110dp"
+        android:src="@drawable/foto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/TVHobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby : Bermain Game"
+        app:layout_constraintTop_toBottomOf="@+id/TVNama"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi : Hello World!"
+        app:layout_constraintTop_toBottomOf="@+id/TVHobby"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:id="@+id/TVDeskripsi"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVDeskripsi"
+        android:id="@+id/BTAlamat"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telepon"
+        app:layout_constraintTop_toBottomOf="@+id/TVDeskripsi"
+        app:layout_constraintLeft_toRightOf="@+id/BTAlamat"
+        android:id="@+id/BTTelepon"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        app:layout_constraintTop_toBottomOf="@+id/TVDeskripsi"
+        app:layout_constraintLeft_toRightOf="@+id/BTTelepon"
+        android:id="@+id/BTEmail"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
